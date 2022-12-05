@@ -1,0 +1,368 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+:root {
+  --yellow: #F3C718;
+  --shadow: rgb(156, 156, 156);
+  --btnColor: #414141;
+}
+
+body{
+  background-color: rgb(230, 230, 230);
+  margin: 0px !important;
+}
+.hover_btn{
+    margin-left: 10px;
+}
+
+.hover_btn a{
+    color: white !important;
+
+}
+
+.sign_btn{
+    background-color: #000000 !important;
+    color: white;
+    font-weight: bold;
+    transition: all 1s;
+    width: 200px;
+}
+
+.sign_btn:hover{
+    background-color: var(--btnColor) !important;
+    color: var(--yellow) !important;
+    border: 1px solid var(--yellow);
+
+    color: black;
+}
+
+
+.navbar_div{
+    height: 100px;
+    position: relative;
+    top: -8px;
+    background-color: #000000 !important;
+}
+
+.img_css{
+    width: 142px;
+    height: 145px;
+    position: relative;
+    top: 40px;
+    z-index: 99999;
+}
+
+
+.link_style{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.contact{
+    position: relative;
+    top:10px;
+    left: 120px;
+    font-size: 20px;
+}
+
+.main_div{
+    background-image: url('../pictures/4.jpg');
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    /* background-size: 100% 100%; */
+    width: 100%;
+    height: 650px;
+    position: relative;
+    top: -16px;
+    z-index: 99;
+
+}
+
+.main_info{
+    position: relative;
+    top: 110px;
+    background-color: #000000b0;
+}
+
+.logo_css{
+    border: 2px solid white;
+    border-radius: 23px;
+    margin-left: 10px;
+    background-color: var(--btnColor);
+}
+.logo_css img{
+    height: 90px;
+    width: 100px;
+}
+.logo_css:hover{
+    box-shadow: 0px 0px 15px var(--yellow);
+}
+
+
+#mobile .hover_btn:hover{
+    background-color: var(--yellow);
+    color: black;
+    border-radius: 33px;
+    padding-left: 10px;
+}
+
+#laptop ul{
+    margin:0;
+    padding:0;
+    display:flex;
+  }
+  
+  #laptop ul li{
+    list-style:none;
+    margin:0 20px;
+    transition:0.5s;
+  }
+  
+  #laptop ul li a{
+    display: block;
+    position:relative;
+    text-decoration:none;
+    padding:5px;
+    font-size:18px;
+    font-family: sans-serif;
+    color:#fff;
+    text-transform:uppercase;
+    transition:0.5s;
+  }
+  
+  #laptop ul:hover li a{
+    transform:scale(1.1);
+    opacity:0.9;
+    filter:blur(5px);
+  }
+  
+  #laptop ul li a:hover{
+    transform:scale(1.2);
+    opacity:1;
+    filter:blur(0);
+    text-decoration:none;
+    color:#fff;
+  }
+  
+  #laptop ul li a:before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: var(--yellow);
+    transition:0.5s;
+    transform-origin:right;
+    transform:scaleX(0);
+    z-index:-1;
+  }
+  
+  #laptop ul li a:hover:before{
+    transition:transform 0.5s;
+    transform-origin:left;
+    transform:scaleX(1);
+  }
+
+
+  .myInput {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    margin-left: 0%;
+    outline: transparent;
+  }
+  
+  .myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .myUL li a {
+    border: 1px solid #ddd;
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block
+  }
+  
+  .myUL li a:hover:not(.header) {
+    background-color: #eee;
+  }
+
+  .first{
+    border-bottom-left-radius: 23px;
+    border-top-left-radius: 23px;
+  }
+
+  .last{
+    border-radius: 0% !important;
+    border-top-right-radius: 23px !important;
+    border-bottom-right-radius: 23px !important;
+    height: 50px;
+  }
+
+.div_line{
+  width: 100%;
+  padding: 0px !important;
+  border-bottom: 1px solid rgb(156, 156, 156);
+}
+
+.div_line_color{
+  width: 10%;
+  border-bottom: 5px solid var(--yellow);
+  font-size: 17px;
+  position: relative;
+  top: 2px;
+}
+
+.card_data{
+  box-shadow: 0px 0px 5px var(--shadow);
+}
+
+.title_{
+  background-color: #f3c71888;
+  position: relative;
+  top: -8px;
+}
+
+
+.title_ a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.title_ a:hover{
+  text-decoration: underline;
+}
+
+.cards{
+  box-shadow: 2px 2px 5px var(--shadow);
+}
+
+.cards:hover{
+  box-shadow: 0px 0px 5px var(--shadow);
+}
+
+.footer_data ul{
+  list-style: none;
+  font-size: 17px;
+}
+
+.footer_data ul li a{
+  color: #ffffff !important;
+  text-decoration: none;
+}
+.footer_data ul li a:hover{
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+.footer_heading_color{
+  color: var(--yellow);
+}
+
+@media screen and (max-width: 1000px) {
+    .link_style{
+        font-weight: bold;
+        font-size: 10px;
+    }
+    .img_css{
+        width: 82px;
+        height: 85px;
+        position: relative;
+        top: 40px;
+        z-index: 99999;
+    }
+    .hover_btn{
+        margin-left: 2px;
+    }
+
+    .main_div{
+        width: 100%;
+        height: 250px;
+        position: relative;
+        top: -16px;
+    }
+    .sign_btn{
+        width: 100px;
+        font-size: 10px;
+    }
+    .contact{
+        position: relative;
+        top:10px;
+        left: 10px;
+    }
+    .main_info{
+      position: relative;
+      top: 150px;
+      background-color: #000000b0;
+  }
+  .logo_css img{
+    height: 70px;
+    width: 80px;
+  }
+  .logo_css div{
+    font-size: 10px;
+  }
+  .myInput {
+    width: 100%;
+    font-size: 8px;
+    padding: 7px 15px 7px 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    margin-left: 0%;
+    outline: transparent;
+  }
+  .last{
+    border-radius: 0% !important;
+    border-top-right-radius: 23px !important;
+    border-bottom-right-radius: 23px !important;
+    height: 29px;
+    width: 15px;
+    font-size: 13px;
+  }
+  .last i{
+    position: relative;
+    left: -8px;
+    top: -3px;
+  }
+  .mobile_view_info{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .div_line_color{
+    width: 20%;
+    font-size: 17px;
+  }
+  }
+  
+  @media screen and (max-width: 998px) {
+    .main_div{
+        position: relative;
+        top: 0px;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .div_line_color{
+      width: 30%;
+      font-size: 17px;
+    }
+  }
+  
+  @media screen and (max-width: 350px) {
+    .div_line_color{
+      width: 30%;
+      font-size: 13px;
+    }
+  }
