@@ -230,9 +230,9 @@ body{
 }
 
 .title_{
-  background-color: #f3c71888;
+  background-color: var(--yellow);
   position: relative;
-  top: -8px;
+  top: 0px;
 }
 
 
@@ -247,6 +247,7 @@ body{
 
 .cards{
   box-shadow: 2px 2px 5px var(--shadow);
+  overflow: hidden;
 }
 
 .cards:hover{
@@ -269,6 +270,20 @@ body{
 
 .footer_heading_color{
   color: var(--yellow);
+}
+
+.zoom{
+  transition: 1s;
+}
+.zoom:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.fb_icon{
+  transition: 1s;
+}
+.fb_icon:hover{
+  color: white !important;
 }
 
 @media screen and (max-width: 1000px) {
